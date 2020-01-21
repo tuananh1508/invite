@@ -17,8 +17,8 @@ deploy:
   - provider: script
     script: cd web && make PROFILE=ins-dev
     skip_cleanup: true
-    # on:
-    #   branch: master
+    on:
+      branch: fix_lambda
 
 env:
   - GO111MODULE=on
